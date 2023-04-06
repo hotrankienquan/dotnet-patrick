@@ -20,11 +20,11 @@ namespace dotnet_patrick.Controllers
             
         }
         
-        [HttpGet("GetAll")]
+        [HttpGet("laytatca")]
         public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> Get()
         {
-      return Ok(await _characterService.GetAllCharacters());
-    }
+          return Ok(await _characterService.GetAllCharacters());
+        }
 
     [HttpGet("{id}")]
     public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> GetSingle(int id)
