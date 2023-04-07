@@ -16,6 +16,6 @@ namespace dotnet_patrick.Models
 
     public byte[] PasswordSalt { get; set; } = new byte[0];
 
-
+    public List<Character>? Characters { get; set; }
   }
 }
